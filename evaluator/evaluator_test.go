@@ -27,7 +27,7 @@ func testEval(input string) object.Object {
     p := parser.New(l)
     program := p.ParseProgram()
 
-    return eval(program)
+    return Eval(program)
 }
 
 func testIntegerObject(t *testing.T, obj object.Object, expected int64) bool {
